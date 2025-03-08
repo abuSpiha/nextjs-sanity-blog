@@ -1,4 +1,5 @@
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import { PortableTextBlock } from "next-sanity";
 
 export interface postCard {
   image: SanityImageSource;
@@ -11,6 +12,6 @@ export interface postCard {
 export interface fullPost {
   image: SanityImageSource;
   title: string;
-  body: any;
+  body: PortableTextBlock[];
   publishedAt: string;
 }
